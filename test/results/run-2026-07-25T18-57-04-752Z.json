@@ -1,0 +1,224 @@
+[
+  {
+    "file": "me_dim.jpg",
+    "run": 1,
+    "success": true,
+    "rejected": false,
+    "rejectionReason": null,
+    "data": {
+      "skinType": "combination",
+      "conditions": {
+        "acne": {
+          "detected": true,
+          "severity": "mild",
+          "score": 22,
+          "areas": [
+            "chin",
+            "cheeks"
+          ]
+        },
+        "dark_spots": {
+          "detected": false,
+          "severity": "none",
+          "score": 5,
+          "areas": []
+        },
+        "dark_circles": {
+          "detected": true,
+          "severity": "mild",
+          "score": 28,
+          "areas": [
+            "under_eyes"
+          ]
+        },
+        "oiliness": {
+          "detected": true,
+          "severity": "mild",
+          "score": 30,
+          "areas": [
+            "forehead",
+            "nose",
+            "t_zone"
+          ]
+        },
+        "dryness": {
+          "detected": false,
+          "severity": "none",
+          "score": 5,
+          "areas": []
+        },
+        "redness": {
+          "detected": false,
+          "severity": "none",
+          "score": 6,
+          "areas": []
+        },
+        "wrinkles": {
+          "detected": false,
+          "severity": "none",
+          "score": 4,
+          "areas": []
+        }
+      },
+      "overallSkinHealth": 72,
+      "aiSummary": "Your skin looks generally healthy with a good, even tone across most of your face. There's a mild shine visible in the T-zone area, which is quite common and suggests a combination skin type. A few small blemishes are noticeable around the chin and cheek areas, and there's a slight darkening under the eyes — both very typical and manageable. Overall, your skin has a solid, youthful baseline to work with.",
+      "confidence": "medium"
+    }
+  },
+  {
+    "file": "person2_fair.jpg",
+    "run": 1,
+    "success": true,
+    "rejected": false,
+    "rejectionReason": null,
+    "data": {
+      "skinType": "combination",
+      "conditions": {
+        "acne": {
+          "detected": true,
+          "severity": "mild",
+          "score": 28,
+          "areas": [
+            "forehead",
+            "cheeks",
+            "temples"
+          ]
+        },
+        "dark_spots": {
+          "detected": true,
+          "severity": "mild",
+          "score": 30,
+          "areas": [
+            "cheeks",
+            "forehead",
+            "temples"
+          ]
+        },
+        "dark_circles": {
+          "detected": true,
+          "severity": "mild",
+          "score": 32,
+          "areas": [
+            "under_eyes"
+          ]
+        },
+        "oiliness": {
+          "detected": true,
+          "severity": "mild",
+          "score": 25,
+          "areas": [
+            "t_zone",
+            "forehead",
+            "nose"
+          ]
+        },
+        "dryness": {
+          "detected": false,
+          "severity": "none",
+          "score": 5,
+          "areas": []
+        },
+        "redness": {
+          "detected": true,
+          "severity": "mild",
+          "score": 22,
+          "areas": [
+            "nose",
+            "cheeks"
+          ]
+        },
+        "wrinkles": {
+          "detected": true,
+          "severity": "moderate",
+          "score": 48,
+          "areas": [
+            "forehead",
+            "under_eyes",
+            "temples"
+          ]
+        }
+      },
+      "overallSkinHealth": 68,
+      "aiSummary": "Your skin shows the natural character that comes with maturity — the expression lines on your forehead and around your eyes give your face a distinguished, lived-in quality. There are a few scattered visible blemishes and some uneven tone across the cheeks and temples, which are very common and manageable. Some mild areas of shine are visible along the t-zone, suggesting a combination skin type. Overall, your skin has a solid foundation and looks well within a healthy range.",
+      "confidence": "medium"
+    }
+  },
+  {
+    "file": "person3_deep.jpg",
+    "run": 1,
+    "success": true,
+    "rejected": false,
+    "rejectionReason": null,
+    "data": {
+      "skinType": "oily",
+      "conditions": {
+        "acne": {
+          "detected": true,
+          "severity": "mild",
+          "score": 28,
+          "areas": [
+            "cheeks",
+            "chin",
+            "jawline"
+          ]
+        },
+        "dark_spots": {
+          "detected": true,
+          "severity": "mild",
+          "score": 22,
+          "areas": [
+            "cheeks",
+            "temples"
+          ]
+        },
+        "dark_circles": {
+          "detected": true,
+          "severity": "mild",
+          "score": 20,
+          "areas": [
+            "under_eyes"
+          ]
+        },
+        "oiliness": {
+          "detected": true,
+          "severity": "mild",
+          "score": 30,
+          "areas": [
+            "forehead",
+            "nose",
+            "t_zone"
+          ]
+        },
+        "dryness": {
+          "detected": false,
+          "severity": "none",
+          "score": 0,
+          "areas": []
+        },
+        "redness": {
+          "detected": false,
+          "severity": "none",
+          "score": 0,
+          "areas": []
+        },
+        "wrinkles": {
+          "detected": false,
+          "severity": "none",
+          "score": 0,
+          "areas": []
+        }
+      },
+      "overallSkinHealth": 74,
+      "aiSummary": "Your skin has a naturally warm, even tone with a youthful appearance overall. There are a few scattered blemishes and small darker areas along the cheeks and jawline, which are very common and subtle against your skin tone. A light shine is visible across the T-zone, suggesting your skin leans oily in that area. Overall, your skin looks healthy and well-hydrated with only minor things to keep an eye on.",
+      "confidence": "medium"
+    }
+  },
+  {
+    "file": "reject_screen.jpg",
+    "run": 1,
+    "success": true,
+    "rejected": true,
+    "rejectionReason": "not_real_photo",
+    "data": null
+  }
+]

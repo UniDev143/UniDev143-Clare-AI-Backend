@@ -1,0 +1,487 @@
+[
+  {
+    "file": "me_bright.jpg",
+    "run": 1,
+    "success": true,
+    "rejected": false,
+    "rejectionReason": null,
+    "data": {
+      "skinType": "combination",
+      "conditions": {
+        "acne": {
+          "detected": true,
+          "severity": "mild",
+          "score": 22,
+          "areas": [
+            "cheeks",
+            "temples"
+          ]
+        },
+        "dark_spots": {
+          "detected": true,
+          "severity": "mild",
+          "score": 18,
+          "areas": [
+            "cheeks"
+          ]
+        },
+        "dark_circles": {
+          "detected": true,
+          "severity": "mild",
+          "score": 28,
+          "areas": [
+            "under_eyes"
+          ]
+        },
+        "oiliness": {
+          "detected": true,
+          "severity": "mild",
+          "score": 30,
+          "areas": [
+            "forehead",
+            "nose",
+            "t_zone"
+          ]
+        },
+        "dryness": {
+          "detected": false,
+          "severity": "none",
+          "score": 5,
+          "areas": []
+        },
+        "redness": {
+          "detected": false,
+          "severity": "none",
+          "score": 8,
+          "areas": []
+        },
+        "wrinkles": {
+          "detected": false,
+          "severity": "none",
+          "score": 4,
+          "areas": []
+        }
+      },
+      "overallSkinHealth": 74,
+      "aiSummary": "Your skin looks generally healthy with a good, even tone across most of your face. There's a slight shine visible along your forehead and nose area, which is common for combination skin types. A few minor blemishes and small darker spots are visible on the cheeks, and there's a touch of shadowing under the eyes — all very typical and manageable. Overall, your skin has a solid, youthful foundation to work with.",
+      "confidence": "medium"
+    }
+  },
+  {
+    "file": "me_dim.jpg",
+    "run": 1,
+    "success": true,
+    "rejected": false,
+    "rejectionReason": null,
+    "data": {
+      "skinType": "combination",
+      "conditions": {
+        "acne": {
+          "detected": true,
+          "severity": "mild",
+          "score": 22,
+          "areas": [
+            "chin",
+            "cheeks"
+          ]
+        },
+        "dark_spots": {
+          "detected": false,
+          "severity": "none",
+          "score": 5,
+          "areas": []
+        },
+        "dark_circles": {
+          "detected": true,
+          "severity": "moderate",
+          "score": 48,
+          "areas": [
+            "under_eyes"
+          ]
+        },
+        "oiliness": {
+          "detected": true,
+          "severity": "mild",
+          "score": 28,
+          "areas": [
+            "nose",
+            "forehead",
+            "t_zone"
+          ]
+        },
+        "dryness": {
+          "detected": false,
+          "severity": "none",
+          "score": 5,
+          "areas": []
+        },
+        "redness": {
+          "detected": false,
+          "severity": "none",
+          "score": 6,
+          "areas": []
+        },
+        "wrinkles": {
+          "detected": false,
+          "severity": "none",
+          "score": 4,
+          "areas": []
+        }
+      },
+      "overallSkinHealth": 74,
+      "aiSummary": "Your skin has a nice even tone overall with a healthy, youthful appearance. The most noticeable feature is some darker shadowing in the under-eye area, which is very common and can be influenced by factors like sleep and lighting. There's a mild shine visible along your T-zone and a few small blemishes around the chin and cheeks, which is quite typical for combination skin. Overall, your skin looks well-maintained and in good shape.",
+      "confidence": "medium"
+    }
+  },
+  {
+    "file": "me_glasses.jpg",
+    "run": 1,
+    "success": true,
+    "rejected": false,
+    "rejectionReason": null,
+    "data": {
+      "skinType": "combination",
+      "conditions": {
+        "acne": {
+          "detected": false,
+          "severity": "none",
+          "score": 8,
+          "areas": []
+        },
+        "dark_spots": {
+          "detected": false,
+          "severity": "none",
+          "score": 5,
+          "areas": []
+        },
+        "dark_circles": {
+          "detected": false,
+          "severity": "none",
+          "score": 6,
+          "areas": [
+            "under_eyes"
+          ]
+        },
+        "oiliness": {
+          "detected": true,
+          "severity": "mild",
+          "score": 30,
+          "areas": [
+            "forehead",
+            "nose",
+            "t_zone"
+          ]
+        },
+        "dryness": {
+          "detected": false,
+          "severity": "none",
+          "score": 5,
+          "areas": []
+        },
+        "redness": {
+          "detected": false,
+          "severity": "none",
+          "score": 7,
+          "areas": []
+        },
+        "wrinkles": {
+          "detected": false,
+          "severity": "none",
+          "score": 4,
+          "areas": []
+        }
+      },
+      "overallSkinHealth": 82,
+      "aiSummary": "Your skin looks generally healthy and well-maintained with an even, consistent tone across most areas. There's a slight shine visible along the forehead and nose, which suggests a mildly oily T-zone — a very common and manageable characteristic. The cheeks and jawline appear balanced and calm with no notable concerns. Overall, your skin has a good, youthful appearance.",
+      "confidence": "medium"
+    }
+  },
+  {
+    "file": "me_warmbulb.jpg",
+    "run": 1,
+    "success": true,
+    "rejected": false,
+    "rejectionReason": null,
+    "data": {
+      "skinType": "combination",
+      "conditions": {
+        "acne": {
+          "detected": true,
+          "severity": "mild",
+          "score": 28,
+          "areas": [
+            "chin",
+            "cheeks",
+            "jawline"
+          ]
+        },
+        "dark_spots": {
+          "detected": false,
+          "severity": "none",
+          "score": 5,
+          "areas": []
+        },
+        "dark_circles": {
+          "detected": true,
+          "severity": "moderate",
+          "score": 48,
+          "areas": [
+            "under_eyes"
+          ]
+        },
+        "oiliness": {
+          "detected": true,
+          "severity": "mild",
+          "score": 30,
+          "areas": [
+            "nose",
+            "forehead",
+            "t_zone"
+          ]
+        },
+        "dryness": {
+          "detected": false,
+          "severity": "none",
+          "score": 5,
+          "areas": []
+        },
+        "redness": {
+          "detected": false,
+          "severity": "none",
+          "score": 5,
+          "areas": []
+        },
+        "wrinkles": {
+          "detected": false,
+          "severity": "none",
+          "score": 4,
+          "areas": []
+        }
+      },
+      "overallSkinHealth": 72,
+      "aiSummary": "Your skin has a nice even tone overall with a naturally warm complexion. The most noticeable feature is some visible shadowing in the under-eye area, which is very common and often linked to lighting or fatigue. There's a slight shine visible along your T-zone and a few minor blemishes around the chin and jawline, which are quite typical for combination skin. Overall, your skin looks healthy and well-maintained.",
+      "confidence": "medium"
+    }
+  },
+  {
+    "file": "person2_fair.jpg",
+    "run": 1,
+    "success": true,
+    "rejected": false,
+    "rejectionReason": null,
+    "data": {
+      "skinType": "sensitive",
+      "conditions": {
+        "acne": {
+          "detected": false,
+          "severity": "none",
+          "score": 5,
+          "areas": []
+        },
+        "dark_spots": {
+          "detected": false,
+          "severity": "none",
+          "score": 4,
+          "areas": []
+        },
+        "dark_circles": {
+          "detected": false,
+          "severity": "none",
+          "score": 6,
+          "areas": [
+            "under_eyes"
+          ]
+        },
+        "oiliness": {
+          "detected": false,
+          "severity": "none",
+          "score": 8,
+          "areas": []
+        },
+        "dryness": {
+          "detected": false,
+          "severity": "none",
+          "score": 7,
+          "areas": []
+        },
+        "redness": {
+          "detected": true,
+          "severity": "mild",
+          "score": 32,
+          "areas": [
+            "cheeks",
+            "nose"
+          ]
+        },
+        "wrinkles": {
+          "detected": false,
+          "severity": "none",
+          "score": 3,
+          "areas": []
+        }
+      },
+      "overallSkinHealth": 84,
+      "aiSummary": "Your skin has a beautifully clear and even appearance overall, with a naturally smooth texture and no visible blemishes. There is a gentle, rosy warmth visible across your cheeks and nose, which gives your complexion a healthy, flushed glow — this is a common and charming characteristic of fair, sensitive skin tones. Your under-eye area looks fresh and well-rested. Overall, your skin looks healthy and radiant.",
+      "confidence": "high"
+    }
+  },
+  {
+    "file": "person3_deep.jpg",
+    "run": 1,
+    "success": true,
+    "rejected": true,
+    "rejectionReason": "not_real_photo",
+    "data": null
+  },
+  {
+    "file": "person4_hijab.jpg",
+    "run": 1,
+    "success": true,
+    "rejected": false,
+    "rejectionReason": null,
+    "data": {
+      "skinType": "normal",
+      "conditions": {
+        "acne": {
+          "detected": true,
+          "severity": "mild",
+          "score": 22,
+          "areas": [
+            "cheeks",
+            "chin"
+          ]
+        },
+        "dark_spots": {
+          "detected": true,
+          "severity": "mild",
+          "score": 18,
+          "areas": [
+            "cheeks"
+          ]
+        },
+        "dark_circles": {
+          "detected": false,
+          "severity": "none",
+          "score": 5,
+          "areas": []
+        },
+        "oiliness": {
+          "detected": true,
+          "severity": "mild",
+          "score": 20,
+          "areas": [
+            "nose",
+            "forehead"
+          ]
+        },
+        "dryness": {
+          "detected": false,
+          "severity": "none",
+          "score": 4,
+          "areas": []
+        },
+        "redness": {
+          "detected": false,
+          "severity": "none",
+          "score": 5,
+          "areas": []
+        },
+        "wrinkles": {
+          "detected": false,
+          "severity": "none",
+          "score": 2,
+          "areas": []
+        }
+      },
+      "overallSkinHealth": 78,
+      "aiSummary": "Your skin has a lovely, even tone with a natural warmth that looks healthy and vibrant. There are a few small visible blemishes along the cheeks and chin, along with some minor areas of shine around the nose and forehead, which is very common. Overall, your skin looks well-balanced and youthful — you have a great natural glow!",
+      "confidence": "medium"
+    }
+  },
+  {
+    "file": "reject_cartoon.jpg",
+    "run": 1,
+    "success": true,
+    "rejected": true,
+    "rejectionReason": "not_real_photo",
+    "data": null
+  },
+  {
+    "file": "reject_object.jpeg",
+    "run": 1,
+    "success": true,
+    "rejected": true,
+    "rejectionReason": "no_face",
+    "data": null
+  },
+  {
+    "file": "reject_screen.jpg",
+    "run": 1,
+    "success": true,
+    "rejected": false,
+    "rejectionReason": null,
+    "data": {
+      "skinType": "combination",
+      "conditions": {
+        "acne": {
+          "detected": false,
+          "severity": "none",
+          "score": 5,
+          "areas": []
+        },
+        "dark_spots": {
+          "detected": false,
+          "severity": "none",
+          "score": 4,
+          "areas": []
+        },
+        "dark_circles": {
+          "detected": true,
+          "severity": "mild",
+          "score": 22,
+          "areas": [
+            "under_eyes"
+          ]
+        },
+        "oiliness": {
+          "detected": true,
+          "severity": "mild",
+          "score": 18,
+          "areas": [
+            "t_zone",
+            "nose"
+          ]
+        },
+        "dryness": {
+          "detected": false,
+          "severity": "none",
+          "score": 6,
+          "areas": []
+        },
+        "redness": {
+          "detected": false,
+          "severity": "none",
+          "score": 7,
+          "areas": []
+        },
+        "wrinkles": {
+          "detected": false,
+          "severity": "none",
+          "score": 3,
+          "areas": []
+        }
+      },
+      "overallSkinHealth": 84,
+      "aiSummary": "Your skin looks clear and even-toned with a naturally healthy appearance. There's a subtle hint of softness under the eyes that gives a gentle, natural look, and a mild natural shine along the t-zone and nose area which is very common for combination skin. Overall, your complexion appears smooth and well-balanced — you have a really lovely natural base to work with.",
+      "confidence": "medium"
+    }
+  },
+  {
+    "file": "reject_twofaces.jpg",
+    "run": 1,
+    "success": true,
+    "rejected": true,
+    "rejectionReason": "multiple_faces",
+    "data": null
+  }
+]
