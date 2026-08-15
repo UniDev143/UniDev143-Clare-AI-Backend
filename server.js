@@ -20,8 +20,12 @@ if (process.env.TRUST_PROXY) {
 }
 
 // Origins allowed on top of each brand's own allowedOrigins. Comma-separated,
-// set per environment (the three subdomains in production).
-const STATIC_ORIGINS = (process.env.CORS_ORIGINS || 'http://localhost:5173')
+// set per environment (the two subdomains in production).
+// Dev default covers both apps: 5173 is the customer scan portal, 5174 the
+// staff admin app. They are separate Vite projects since the frontend split.
+const STATIC_ORIGINS = (
+  process.env.CORS_ORIGINS || 'http://localhost:5173,http://localhost:5174'
+)
   .split(',')
   .map(s => s.trim())
   .filter(Boolean);

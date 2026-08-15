@@ -1,7 +1,11 @@
 # Claré AI — Deployment (Day 7)
 
-Covers both repos. Backend goes to a Node host (Railway or Render); the
-frontend is a static Vite build served from a CDN host.
+> **Status: not deployed, by choice.** The build is finished and verified
+> locally; deployment is deferred until further changes land. Everything below
+> is ready to run when that time comes.
+
+Covers all three repos. Backend goes to a Node host (Railway or Render); the
+scan portal and admin app are static Vite builds served from a CDN host.
 
 **Nothing here has been run against a live environment.** Everything below is
 prepared and verified locally — the production build succeeds, CORS and rate
@@ -112,6 +116,12 @@ directory `dist`. Each is a separate deploy.
 |---|---|
 | `VITE_API_URL` | Same backend URL, including `/api` |
 
+The login screens (`/login`, `/super/login`) expect a background video at
+`Admin/public/login-background.mp4`. It is not committed, so unless you add it
+the deployed login page shows its animated purple-gradient fallback — a missing
+file degrades, it does not break. If you do add it, keep it small: it downloads
+before anyone can sign in.
+
 Both must be listed in the backend's `CORS_ORIGINS`.
 
 `VITE_*` variables are inlined at build time and visible to anyone who views
@@ -193,6 +203,16 @@ spends the second brand's credits and leaves the first untouched.
   is unauthenticated by design — the customer who just scanned has no login.
   Ids are Mongo ObjectIds, not secrets. Acceptable for cosmetic analysis;
   revisit if the payload ever carries anything more sensitive.
+- **API keys cannot be rotated.** A brand can read its own key from its
+  dashboard (`GET /api/brands/my/api-key`) but cannot replace it. A leaked key
+  can only be changed by editing the database directly — `test/issueKeys.js`
+  only fills in brands that have no key at all. **Fix this before the first
+  real brand goes live.** The shape: `previousApiKey` + `previousKeyExpiresAt`
+  on `Brand`, matched as a second `$or` branch in `middleware/apiKey.js`, so a
+  routine rotation gets a grace window (the old key is baked into the brand's
+  deployed site and cannot change instantly) while a leak gets a zero-length
+  one. Record when a retired key was last used and surface it on the dashboard,
+  or the window expires silently and takes the brand's widget down with it.
 - **Scan portal bundle is 462 KB** (146 KB gzipped) in one chunk; the admin app
   is 318 KB (100 KB). Splitting the apps apart only took ~40 KB off the
   customer bundle — MediaPipe dominates it, not app code. Lazy-loading the

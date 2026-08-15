@@ -12,6 +12,27 @@ const getMyBrand = async (req, res) => {
   }
 };
 
+// GET /api/brands/my/api-key — the brand's own scan key, for its dashboard.
+//
+// Deliberately its own endpoint rather than leaning on /brands/my returning the
+// whole document: the key is the one credential a brand may need to read back
+// after onboarding, so it is served explicitly and scoped to the caller's own
+// brandId. A super-admin belongs to no brand and has nothing to return here.
+const getMyApiKey = async (req, res) => {
+  try {
+    if (!req.admin.brandId) {
+      return sendError(res, 'This account is not attached to a brand', 400);
+    }
+
+    const brand = await Brand.findById(req.admin.brandId).select('apiKey name');
+    if (!brand) return sendError(res, 'Brand not found', 404);
+
+    sendSuccess(res, { apiKey: brand.apiKey, brandName: brand.name });
+  } catch (error) {
+    sendError(res, 'Could not load your API key', 500);
+  }
+};
+
 // GET /api/brands/widget — public, authenticated by X-Api-Key only.
 // Used by the scan portal to validate a key and brand the experience.
 // Deliberately narrow: the customer's browser learns the brand's name and
@@ -42,6 +63,14 @@ const updateMyBrand = async (req, res) => {
   try {
     const { name, website, logo, widgetConfig } = req.body;
 
+    // The colour is injected into a CSS custom property in every customer's
+    // browser, so it is validated here rather than trusted from the form.
+    // Anything but a plain 6-digit hex is refused outright.
+    if (widgetConfig?.primaryColor &&
+        !/^#[0-9a-f]{6}$/i.test(widgetConfig.primaryColor)) {
+      return sendError(res, 'Brand colour must be a hex value like #6B21A8', 400);
+    }
+
     const brand = await Brand.findByIdAndUpdate(
       req.admin.brandId,
       { name, website, logo, widgetConfig },
@@ -54,4 +83,4 @@ const updateMyBrand = async (req, res) => {
   }
 };
 
-module.exports = { getMyBrand, updateMyBrand, getWidgetBrand };
+module.exports = { getMyBrand, updateMyBrand, getWidgetBrand, getMyApiKey };
